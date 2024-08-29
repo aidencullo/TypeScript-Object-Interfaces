@@ -2,7 +2,7 @@
 
 interface Learner {
   // Add an optional id property:
-  // id?: string;
+  id?: string;
   name: {
     first: string;
     last: string;
@@ -15,7 +15,8 @@ interface Learner {
 const john: Learner = {
   id: "1208365",
   name: {
-    first: "John"
+      first: "John",
+      last: "Doe",
   },
   course: "Introduction to TypeScript",
   grades: [96, 88, 100, 94]
